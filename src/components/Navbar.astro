@@ -1,0 +1,16 @@
+---
+import { Image } from "astro:assets";
+import isologotipo from "../assets/isologotipo.svg";
+---
+
+<div class="grid grid-cols-6">
+  <Image class="col-start-1 col-end-2" src={isologotipo} alt={"Pinguino con una computadora"} width={250}/>
+  <nav class="col-start-2 col-end-6 self-center">
+    <ul class=" w-full flex gap-20 justify-end">
+      <li class="font-poppins font-bold"><a href="/">Inicio</a></li>
+      <li class="font-poppins font-bold"><a href="/services">Servicios</a></li>
+      <li class="font-poppins font-bold"><a href="/about">Nosotros</a></li>
+      <li class="font-poppins font-bold"><a href="/contact">Contacto</a></li>
+    </ul>
+  </nav>
+</div>
