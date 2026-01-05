@@ -1,6 +1,6 @@
 ---
+import Card from "../components/Card.astro";
 import HeroPage from "../components/HeroPage.astro";
-import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -9,4 +9,9 @@ import "../styles/global.css";
 
 <Layout>
   <HeroPage />
+  <div class="grid grid-cols-12 justify-items-center-safe">
+    <Card title="Desarrollo a medida" subtitle="Nada de soluciones genéricas. Construimos lo que tu proyecto necesita"/>
+    <Card title="Desarrollo a medida" subtitle="Nada de soluciones genéricas. Construimos lo que tu proyecto necesita"/>
+    <Card title="Desarrollo a medida" subtitle="Nada de soluciones genéricas. Construimos lo que tu proyecto necesita"/>
+  </div>
 </Layout>

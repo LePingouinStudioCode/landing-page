@@ -1,21 +1,47 @@
 ---
 import { Image } from "astro:assets";
 import heroImage from "../assets/IlustracionHero.png";
+
+
 ---
 
 <div class="grid grid-cols-12 self-center">
   <div class=" col-start-2 col-end-7 flex flex-col justify-center">
     <div class="w-xl">
-      <h1 class="text-5xl font-inter font-bold leading-loose">Construyendo</h1>
+      <h1 class="text-5xl font-inter font-bold leading-snug">Convertimos ideas en software real,</h1>
     </div>
     <div class="w-xl">
-      <h1 class="text-5xl font-inter font-bold leading-loose">Soluciones de Software</h1>
+      <h1 class="text-5xl font-inter font-bold leading-snug">Escalable y</h1>
     </div>
     <div class="w-xl">
-      <h1 class="text-5xl font-inter font-bold leading-loose">Innovadoras</h1>
+      <h1 class="text-5xl font-inter font-bold leading-snug ">Bien hecho</h1>
+    </div>
+    <hr class="my-4 bg-secundary"/>
+    <div class="w-xl">
+      <h2 class="text-2xl font-poppins">
+        Aplicaciones web modernas, APIs y soluciones a medida para startups y empresas que quieren crecer sin dolores técnicos.
+      </h2>
+    </div>
+    <div class="w-xl my-4">
+        <button id="quotes" class="cursor-pointer hover:bg-primary hover:text-background  hover:border bg-secondary text-background font-bold w-3xs h-12 rounded-md">Solicitar Presupuesto</button>
+        <button id="our-services" class="cursor-pointer bg-background text-text-primary hover:bg-primary hover:text-background font-bold w-3xs h-12 border border-primary rounded-md">Nuestros Servicios</button>
     </div>
   </div>
   <div class="col-start-7 col-end-12">
-    <Image src={heroImage} alt="Pingüino programando en el Studio" />
+    <Image src={heroImage} alt="Pingüinos programando y analizando en el Studio" />
   </div>
 </div>
+
+
+<script>
+  const buttonQuotes=document.querySelector('#quotes')
+  const buttonOurService=document.querySelector('#our-services')
+
+  buttonQuotes?.addEventListener('click',()=>{
+    console.log('Botón Perdir Presupuesto')
+  })
+
+  buttonOurService?.addEventListener('click',()=>{
+    console.log('Botón Nuestros Servicios')
+  })
+</script>

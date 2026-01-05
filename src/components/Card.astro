@@ -1,0 +1,14 @@
+---
+import { Settings } from '@lucide/astro';
+const {title, subtitle}= Astro.props
+---
+
+<div class="col-span-3 p-5 shadow-2xl sm:max-w-sm rounded-lg">
+  <div class="">
+    <div class="flex">
+        <Settings/>
+        <h5 class="mb-2.5">{title}</h5>
+    </div>
+    <p class="mb-4">{subtitle}</p>
+  </div>
+</div>
