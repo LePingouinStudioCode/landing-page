@@ -1,4 +1,5 @@
 ---
+import { Settings, Rocket, HeartHandshake } from '@lucide/astro';
 import Card from "../components/Card.astro";
 import HeroPage from "../components/HeroPage.astro";
 import Layout from "../layouts/Layout.astro";
@@ -9,9 +10,15 @@ import "../styles/global.css";
 
 <Layout>
   <HeroPage />
-  <div class="grid grid-cols-12 justify-items-center-safe">
-    <Card title="Desarrollo a medida" subtitle="Nada de soluciones genéricas. Construimos lo que tu proyecto necesita"/>
-    <Card title="Desarrollo a medida" subtitle="Nada de soluciones genéricas. Construimos lo que tu proyecto necesita"/>
-    <Card title="Desarrollo a medida" subtitle="Nada de soluciones genéricas. Construimos lo que tu proyecto necesita"/>
+  <div class="w-full flex flex-row justify-between flex-wrap min-h-75 content-center">
+    <Card title="Desarrollo a medida" subtitle="Nada de soluciones genéricas ni plantillas forzadas. Diseñamos y construimos software adaptado a tu negocio, tus procesos y tus objetivos reales.">
+      <Settings slot="icon" size={24} />
+    </Card>
+    <Card iconName='rocket' title="Soluciones que escalan" subtitle="Desarrollamos plataformas sólidas, flexibles y preparadas para crecer junto a tu proyecto, sin limitarte a corto plazo.">
+      <Rocket slot="icon" size={24} />
+    </Card>
+    <Card title="Acompañamiento real" subtitle="Comunicación clara, decisiones compartidas y seguimiento constante. Te acompañamos en todo el proceso, desde la idea inicial hasta la puesta en producción.">
+      <HeartHandshake slot="icon" size={24} />
+    </Card> 
   </div>
 </Layout>
