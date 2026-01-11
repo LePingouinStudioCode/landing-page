@@ -4,24 +4,54 @@ import Navbar from "../components/Navbar-coming-soon.astro";
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Le Pingouin Studio Code</title>
-	</head>
-	<body class=`bg-background bg-no-repeat bg-[url(../assets/fondito-coming-soon.png)] xs:bg-bottom-right xs:bg-size-[375px] md:bg-contain md:bg-bottom-right`>
-		<Navbar />
-		<slot />
-	</body>
+  <head>
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Desarrollo de software a medida. Próximamente."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Le Pingouin Code Studio" />
+    <meta
+      property="og:description"
+      content="Estamos preparando algo grande 🐧💻"
+    />
+    <!-- Tamaño de imagen Open Graph -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta
+      property="og:image"
+      content="https://lepingouinstudiocode.com.ar/og/og-coming-soon.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lepingouinstudiocode.com.ar/" />
+
+    <meta charset="UTF-8" />
+
+    <!-- Port para Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icono de la solapa -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta name="generator" content={Astro.generator} />
+    <title>Le Pingouin Studio Code</title>
+  </head>
+  <body
+    class=`bg-background bg-no-repeat bg-[url(../assets/fondito-coming-soon.png)] xs:bg-bottom-right xs:bg-size-[375px] md:bg-contain md:bg-bottom-right`
+  >
+    <Navbar />
+    <slot />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>
