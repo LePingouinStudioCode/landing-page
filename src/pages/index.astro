@@ -4,6 +4,7 @@
 // import HeroPage from "../components/HeroPage.astro";
 import HeroComingSoon from "../components/HeroComingSoon.astro";
 import Layout from "../layouts/Layout.astro";
+import Loader from "../components/Loader.astro";
 import "../styles/global.css";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -11,6 +12,7 @@ import "../styles/global.css";
 ---
 
 <Layout>
+  <Loader />
   <div class="xs:w-svw xs:pt-5 flex justify-center md:pr-70 md:px-39 md:pt-3 ">
     <HeroComingSoon/>
   </div>

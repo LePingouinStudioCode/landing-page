@@ -1,0 +1,28 @@
+<div
+  id="page-loader"
+  class="fixed inset-0 z-50 flex items-center justify-center bg-background transition-opacity duration-500"
+>
+  <div class="flex flex-col items-center gap-4">
+    <!-- Spinner -->
+    <div class="w-10 h-10 rounded-full border-2 border-secondary border-t-transparent animate-spin"></div>
+
+    <!-- Texto opcional -->
+    <p class="font-poppins text-sm text-text-secondary opacity-70">
+      Cargando…
+    </p>
+  </div>
+</div>
+
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("page-loader");
+
+    if (!loader) return;
+
+    loader.classList.add("opacity-0");
+
+    setTimeout(() => {
+      loader.remove();
+    }, 500);
+  });
+</script>
