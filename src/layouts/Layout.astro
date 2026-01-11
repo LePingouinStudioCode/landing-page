@@ -1,17 +1,17 @@
 ---
-import Navbar from "../components/Navbar.astro";
+import Navbar from "../components/Navbar-coming-soon.astro";
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Le Pingouin Studio Code</title>
 	</head>
-	<body class="bg-background lg:px-39 lg:pt-3">
+	<body class=`bg-background bg-no-repeat bg-[url(../assets/fondito-coming-soon.png)] xs:bg-bottom-right xs:bg-size-[375px] md:bg-contain md:bg-bottom-right`>
 		<Navbar />
 		<slot />
 	</body>

@@ -3,15 +3,20 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "tunnel": "cloudflared tunnel --url http://localhost:4321",
+    "dev:tunnel":  "concurrently \"npm run dev\" \"npm run tunnel\""
   },
   "dependencies": {
     "@lucide/astro": "^0.562.0",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.6",
     "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }

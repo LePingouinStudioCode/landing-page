@@ -15,8 +15,8 @@
   --color-soft-peach: oklch(0.9075 0.0446 58.41);
   --color-alternative-green: oklch(0.5877 0.0737 157.05);
 
-  --breakpoint-xs: 480px; /* mobile chico */
-  --breakpoint-sm: 640px; /* mobile landscape */
+  --breakpoint-xs: 375px; /* mobile chico */
+  --breakpoint-sm: 425px; /* mobile landscape */
   --breakpoint-md: 768px; /* tablet */
   --breakpoint-lg: 1024px; /* laptop */
   --breakpoint-xl: 1280px; /* desktop */

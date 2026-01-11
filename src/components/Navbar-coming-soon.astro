@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+import isologotipo from "../assets/isologotipo.svg";
+import linkedinLogo from "../assets/Linkedin.png"
+import instagramLogo from "../assets/Instagram.png";
+---
+
+<div class="flex flex-row justify-between items-center xs:pr-4 md:px-39 pt-3">
+  <Image class="xs:w-31.25 md:w-62.5" src={isologotipo} alt={"Pinguino con una computadora"}/>
+  <nav class=" lg:w-full flex gap-6 justify-end">
+    <a href="https://www.instagram.com/lepingouinstudiocode/" target="_blank" rel="noopener noreferrer">
+      <Image class="xs:w-6 md:w-8 xs:transition-none opacity-80 hover:opacity-100 md:transition delay-50 duration-300 ease-in-out hover:-translate-y-1" src={instagramLogo} alt="instagram"/>
+    </a>
+    <a class="xs:pr-2 " href="https://www.linkedin.com/in/le-pingouin-studio-code/" target="_blank" rel="noopener noreferrer">
+      <Image class="xs:w-6 md:w-8 xs:transition-none opacity-80 hover:opacity-100 md:transition delay-50 duration-300 ease-in-out hover:-translate-y-1" src={linkedinLogo} alt="linkedin"/>
+    </a>
+  </nav>
+</div>

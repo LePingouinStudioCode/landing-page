@@ -1,15 +1,20 @@
 ---
-import { Settings, Rocket, HeartHandshake } from '@lucide/astro';
-import Card from "../components/Card.astro";
-import HeroPage from "../components/HeroPage.astro";
+// import { Settings, Rocket, HeartHandshake } from '@lucide/astro';
+// import Card from "../components/Card.astro";
+// import HeroPage from "../components/HeroPage.astro";
+import HeroComingSoon from "../components/HeroComingSoon.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-  <HeroPage />
+  <div class="xs:w-svw xs:pt-5 flex justify-center md:pr-70 md:px-39 md:pt-3 ">
+    <HeroComingSoon/>
+  </div>
+  <!-- <HeroPage />
   <div class="w-full flex flex-row justify-between flex-wrap min-h-75 content-center">
     <Card title="Desarrollo a medida" subtitle="Nada de soluciones genéricas ni plantillas forzadas. Diseñamos y construimos software adaptado a tu negocio, tus procesos y tus objetivos reales.">
       <Settings slot="icon" size={24} />
@@ -20,5 +25,5 @@ import "../styles/global.css";
     <Card title="Acompañamiento real" subtitle="Comunicación clara, decisiones compartidas y seguimiento constante. Te acompañamos en todo el proceso, desde la idea inicial hasta la puesta en producción.">
       <HeartHandshake slot="icon" size={24} />
     </Card> 
-  </div>
+  </div> -->
 </Layout>
